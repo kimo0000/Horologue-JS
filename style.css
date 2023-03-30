@@ -1,0 +1,44 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://picsum.photos/200/300?grayscale'), linear-gradient(to bottom, #b08181 0%, #b08181 100%);
+    background-position: center center;
+    background-size: cover;
+}
+
+.horologue {
+    width: fit-content;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgb(0,0,0);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    gap: 15px;
+    font-size: 35px;
+}
+
+.time, .date {
+    letter-spacing: 3px;
+    font-weight: normal;
+    text-shadow: 2px 2px 3px #f50;
+}
+
